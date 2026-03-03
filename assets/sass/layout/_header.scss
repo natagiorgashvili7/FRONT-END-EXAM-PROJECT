@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+    .main_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+        .home {
+            background-color: rgb(17, 16, 16);
+        }
+
+        .home, .discover, .search {
+            width: 210px;
+            height: 54px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            a{
+                color: #E0E0E0;
+                font-weight: 400;
+                font-size: 14px;
+                letter-spacing: 3%;
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            border: none;
+            cursor: pointer;
+        }
+        .profile {
+            width: 35px;
+            height: 35px;
+            padding-bottom: 2px;
+        }
+        
+    }
+
+}

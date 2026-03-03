@@ -1,3 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.header .main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.header .main_section .home {
+  background-color: rgb(17, 16, 16);
+}
+.header .main_section .home, .header .main_section .discover, .header .main_section .search {
+  width: 210px;
+  height: 54px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.header .main_section .home a, .header .main_section .discover a, .header .main_section .search a {
+  color: #E0E0E0;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3%;
+}
+.header .actions {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.header .actions button {
+  border: none;
+  cursor: pointer;
+}
+.header .actions .profile {
+  width: 35px;
+  height: 35px;
+  padding-bottom: 2px;
+}
 
+* {
+  background-color: #060606;
+}
 
 /*# sourceMappingURL=style.css.map */
