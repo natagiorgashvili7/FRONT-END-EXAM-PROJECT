@@ -1,0 +1,27 @@
+// abstracts
+@use 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+
+// layout
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/main';
+@use 'layout/side';
+
+// pages
+@use 'pages/about-artist';
+@use 'pages/album';
+@use 'pages/artist';
+@use 'pages/discover';
+@use 'pages/episodes';
+@use 'pages/grid-albums';
+@use 'pages/library';
+@use 'pages/liked-songs';
+@use 'pages/playlist';
+@use 'pages/podcasts';
+@use 'pages/search';
+
+* {
+    background-color: #060606;
+}
