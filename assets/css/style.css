@@ -1,14 +1,13 @@
 .header {
   display: flex;
-  justify-content: space-around;
-  margin: 20px;
+  justify-content: space-between;
+  width: 100%;
 }
 .header .main_section {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
+  justify-content: space-between;
 }
 .header .main_section .home {
   background-color: rgb(17, 16, 16);
@@ -27,23 +26,57 @@
   letter-spacing: 3%;
 }
 .header .actions {
-  display: flex;
-  text-align: center;
-  align-items: center;
   gap: 10px;
+  display: flex;
+  align-items: flex-start;
 }
 .header .actions button {
   border: none;
   cursor: pointer;
 }
 .header .actions .profile {
-  width: 35px;
-  height: 35px;
-  padding-bottom: 2px;
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+.aside_nav {
+  padding-top: 20px;
+  width: 248px;
+}
+.aside_nav .main_pages {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.aside_nav .main_pages .each_page {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.aside_nav .main_pages a {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3%;
+  color: #898989;
+}
+.aside_nav .main_pages a:hover {
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+.aside_nav .main_pages a:active {
+  color: white;
 }
 
 * {
   background-color: #060606;
+}
+
+.main_structure {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
