@@ -1,14 +1,14 @@
 .header {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: space-between;
+    width: 100%;
+
 
     .main_section {
         display: flex;
-        justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 10px;
+        justify-content: space-between;
 
         .home {
             background-color: rgb(17, 16, 16);
@@ -31,19 +31,19 @@
     }
 
     .actions {
-        display: flex;
-        text-align: center;
-        align-items: center;
         gap: 10px;
+        display: flex;
+        align-items: flex-start;
+        
 
         button {
             border: none;
             cursor: pointer;
         }
         .profile {
-            width: 35px;
-            height: 35px;
-            padding-bottom: 2px;
+            width: 30px;
+            height: 30px;
+            margin-top: 7px;
         }
         
     }
