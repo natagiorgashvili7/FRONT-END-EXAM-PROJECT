@@ -351,13 +351,19 @@
     .scroll {
         display: none;
     }
+    .discover {
+        .each_discover_box {
+            width: 100px !important;
+            height: 100px !important;
+        }
+    }
 
     .ganres {
         flex-wrap: wrap;
 
         .each_ganres_box {
-            width: 110px !important;
-            height: 110px !important;
+            width: 100px !important;
+            height: 100px !important;
         }
     }
 }
