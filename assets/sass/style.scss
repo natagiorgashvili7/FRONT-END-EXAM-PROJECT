@@ -22,11 +22,12 @@
 @use 'pages/podcasts';
 @use 'pages/search';
 
-* {
+body {
     background-color: #060606;
+    
 }
 .main_structure {
     display: flex;
-    margin: 20px;
     gap:20px;
+
 }
