@@ -1,3 +1,4 @@
+// footer
 .player {
   position: fixed;
   bottom: 0;
@@ -8,9 +9,9 @@
   border-top: 1px solid #282828;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   padding: 0 16px;
-  gap: 16px;
   z-index: 100;
  
   &-controle {
@@ -23,7 +24,7 @@
     .controls {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
 
       img {
         width: 40px;
@@ -38,7 +39,7 @@
     .progress-section {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       width: 100%;
 
       span {
@@ -75,101 +76,177 @@
       }
     }
   }
-
-  // ── Track Info (centre) ───────────────────
-  .music {
+  .music_and_buttons {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 150px;
-    flex: 1;
-    justify-content: center;
-    min-width: 0;
-
-    .music_info {
-        margin-left: 90px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-
-        img {
-        width: 56px;
-        height: 56px;
-        border-radius: 4px;
-        object-fit: cover;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        flex-shrink: 0;
-        }
-
-        .track-info {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        min-width: 0;
-
-        p {
-            margin: 0;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .track-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #E0E0E0;
-            letter-spacing: 0.01em;
-
-            &:hover {
-            text-decoration: underline;
-            cursor: pointer;
-            }
-        }
-
-        .artist {
-            font-size: 12px;
-            color: #898989;
-        }
-
-        .band {
-            font-size: 11px;
-            color: #898989;
-        }
-        }
-
-    }
-
-    
-    .track-actions {
+    gap: 30px;
+      .music {
       display: flex;
       align-items: center;
-      gap: 40px;
-      flex-shrink: 0;
+      flex: 1;
+      justify-content: space-between;
+      gap: 20px;
+      min-width: 0;
+
+      .music_info {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          img {
+          width: 56px;
+          height: 56px;
+          border-radius: 4px;
+          object-fit: cover;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+          flex-shrink: 0;
+          }
+
+          .track-info {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          min-width: 0;
+
+          p {
+              margin: 0;
+              white-space: nowrap;
+              overflow: hidden;
+          }
+
+          .track-title {
+              font-size: 14px;
+              font-weight: 600;
+              color: #E0E0E0;
+              letter-spacing: 0.01em;
+
+              &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+              }
+          }
+
+          .artist {
+              font-size: 12px;
+              color: #898989;
+          }
+
+          .band {
+              font-size: 11px;
+              color: #898989;
+          }
+          }
+
+      }
+
+      
+      .track-actions {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-shrink: 0;
+
+        img {
+          width: 40px;
+          height: 40px;
+          box-shadow: none;
+          border-radius: 0;
+          cursor: pointer;
+          opacity: 0.7;
+          transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
 
       img {
         width: 40px;
         height: 40px;
-        box-shadow: none;
-        border-radius: 0;
         cursor: pointer;
         opacity: 0.7;
         transition: opacity 0.2s ease, transform 0.2s ease;
       }
+    }  
+  }
+  .mobile_icon {
+    display: none;
+  }
+  .footer_nav {
+    display: none;
+  }
+  
+ @media (max-width: 1240px) {
+    .music_and_buttons .track-actions, .music_and_buttons-right, &-controle {
+      display: none;
     }
   }
 
-  // ── Right Actions ─────────────────────────
-  &-right {
+  @media (max-width: 650px) {
     display: flex;
-   align-items: center;
-    gap: 16px;
-    flex: 1;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 0 8px;
+    bottom: 70px;
 
-    img {
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-        opacity: 0.7;
-        transition: opacity 0.2s ease, transform 0.2s ease;
+
+
+    .music_and_buttons {
+      justify-content: center;
+      gap: 8px;
+
+      .music {
+        display: flex;
+        justify-content: center;
+        .track-actions {
+          display: none;
+        }
+
+        .music_info {
+          gap: 8px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      &-right {
+        display: none;
+      }
+      .player-right {
+        display: none;
+      }
+    }
+
+    &-controle {
+      display: none;
+    }
+    .mobile_icon {
+      display: flex;
+    }
+    .footer_nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 72px;
+        background-color: #1b1f26;
+        border-top: 1px solid #333842;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 16px;
+        z-index: 100;
+
+        a {
+          background-color: #1b1f26;
+          cursor: pointer;
+        }
+      
+
     }
   }
 }
