@@ -1,51 +1,63 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-
-    .main_section {
-        display: flex;
-        align-items: center;
-        text-align: center;
+@use "../abstracts/mixins";
+.first_page {
+    flex: 1;
+    padding: 10px;
+    .header {
+        @include mixins.flex_structure;
         justify-content: space-between;
+        max-width: 100%;
 
-        .home {
-            background-color: rgb(17, 16, 16);
-        }
-
-        .home, .discover, .search {
-            width: 210px;
-            height: 54px;
+        .main_section {
             display: flex;
-            text-align: center;
             align-items: center;
+            text-align: center;
+            justify-content: space-between;
 
-            a{
-                color: #E0E0E0;
-                font-weight: 400;
-                font-size: 14px;
-                letter-spacing: 3%;
+
+            .home {
+                background-color: rgb(17, 16, 16);
+            }
+
+            .home, .discover, .search {
+                width: 210px;
+                height: 54px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+
+                a{
+                    color: #E0E0E0;
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: 3%;
+                }
+                input {
+                    background-color:  black;
+                    border: none;
+                    outline: none;
+                    color: #E0E0E0;
+                }
             }
         }
-    }
 
-    .actions {
-        gap: 10px;
-        display: flex;
-        align-items: flex-start;
-        
+        .actions {
+            gap: 10px;
+            display: flex;
+            align-items: flex-start;
+            
 
-        button {
-            border: none;
-            cursor: pointer;
+            button {
+                border: none;
+                cursor: pointer;
+                background-color: black;
+            }
+            .profile {
+                width: 30px;
+                height: 30px;
+                margin-top: 7px;
+            }
+            
         }
-        .profile {
-            width: 30px;
-            height: 30px;
-            margin-top: 7px;
-        }
-        
-    }
 
+    }
 }
