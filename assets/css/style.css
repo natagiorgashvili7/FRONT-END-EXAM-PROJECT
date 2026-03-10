@@ -1035,6 +1035,347 @@ body {
   overflow-x: hidden;
 }
 
+#discover {
+  background-color: rgb(17, 16, 16);
+}
+
+#home {
+  background-color: black;
+}
+
+.playlist_section {
+  background: linear-gradient(180deg, rgba(80, 120, 110, 0.9) 0%, rgb(20, 20, 20) 80%);
+  padding: 40px;
+  height: 100vh;
+}
+.playlist_section .playlist_container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.playlist_section .playlist_cover img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.playlist_section .playlist_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.playlist_section .playlist_top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.playlist_section .playlist_top .small_cover {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.playlist_section .playlist_top h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.playlist_section .playlist_top p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+.playlist_section .playlist_controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.playlist_section .playlist_controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.playlist_section .playlist_controls .play_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1ed760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playlist_section .playlist_controls .play_btn img {
+  width: 18px;
+}
+.playlist_section .playlist_controls .icon_btn img {
+  width: 20px;
+  opacity: 0.8;
+}
+.playlist_section .playlist_tags {
+  display: flex;
+  gap: 10px;
+}
+.playlist_section .playlist_tags span {
+  background: #1f2933;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.playlist2_section {
+  background: linear-gradient(180deg, #401D06 0%, #121212 80%);
+  padding: 40px;
+}
+.playlist2_section .playlist2_container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.playlist2_section .playlist2_cover img {
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.playlist2_section .playlist2_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.playlist2_section .playlist2_top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.playlist2_section .playlist2_top .small_cover {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.playlist2_section .playlist2_top h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.playlist2_section .playlist2_top p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+.playlist2_section .playlist_controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.playlist2_section .playlist_controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.playlist2_section .playlist_controls .play_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1ed760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playlist2_section .playlist_controls .play_btn img {
+  width: 18px;
+}
+.playlist2_section .playlist_controls .icon_btn img {
+  width: 20px;
+  opacity: 0.8;
+}
+.playlist2_section .playlist_tags {
+  display: flex;
+  gap: 10px;
+}
+.playlist2_section .playlist_tags span {
+  background: #1f2933;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .playlist_section {
+    padding: 20px;
+    height: auto;
+  }
+  .playlist_section .playlist_container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .playlist_section .playlist_cover img {
+    width: 220px;
+    height: 300px;
+  }
+  .playlist_section .playlist_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .playlist2_section {
+    padding: 20px;
+  }
+  .playlist2_section .playlist2_container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .playlist2_section .playlist2_cover img {
+    width: 220px;
+    height: 300px;
+  }
+  .playlist2_section .playlist2_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.episode_main {
+  background: linear-gradient(180deg, rgba(165, 96, 42, 0.47) 0%, rgba(6, 6, 6, 0.47) 100%);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.episode_main .episode_intro {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
+}
+.episode_main .episode_intro .episode-header h3 {
+  color: #E0E0E0;
+  letter-spacing: 3%;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.episode_main .episode_intro .episode-header p {
+  color: #E0E0E0;
+  letter-spacing: 3%;
+  font-weight: 500;
+  font-size: 14px;
+}
+.episode_main .episode_intro .episode-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+}
+.episode_main .episode_intro .episode-actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.episode_main .episode_intro .episode-actions button img {
+  width: 40px;
+  height: 40px;
+}
+.episode_main .episode_intro .episode_img img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+.episode_main .about_episode {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+}
+.episode_main .about_episode .playlist_img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+.episode_main .about_episode .description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.episode_main .about_episode .description h4 {
+  color: #E0E0E0;
+  letter-spacing: 3%;
+  font-weight: 700;
+  font-size: 20px;
+}
+.episode_main .about_episode .description p {
+  color: #E0E0E0;
+  letter-spacing: 3%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 1224px) {
+  .episode_main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .episode_main .episode_intro {
+    margin: 20px;
+  }
+  .episode_main .episode_intro .episode-header h3 {
+    font-size: 30px;
+  }
+  .episode_main .about_episode {
+    width: 100%;
+    margin: 20px;
+  }
+  .episode_main .about_episode .playlist_img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .episode_main {
+    padding: 10px;
+  }
+  .episode_main .episode_intro {
+    margin: 10px;
+    gap: 20px;
+  }
+  .episode_main .episode_intro .episode-header h3 {
+    font-size: 24px;
+  }
+  .episode_main .episode_intro .episode-header p {
+    font-size: 13px;
+  }
+  .episode_main .episode_intro .episode-actions {
+    gap: 10px;
+  }
+  .episode_main .episode_intro .episode-actions button img {
+    width: 32px;
+    height: 32px;
+  }
+  .episode_main .about_episode {
+    gap: 20px;
+  }
+  .episode_main .about_episode .playlist_img {
+    max-width: 150px;
+  }
+  .episode_main .about_episode .description {
+    gap: 20px;
+  }
+  .episode_main .about_episode .description h4 {
+    font-size: 18px;
+  }
+  .episode_main .about_episode .description p {
+    font-size: 14px;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #podcast {
   background-color: rgb(17, 16, 16);
 }
