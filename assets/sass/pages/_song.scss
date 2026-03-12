@@ -17,25 +17,27 @@ body {
 
 .main {
   padding: 40px;
-  overflow: auto;
   background: variables.$bg;
 }
 
 /* SONG HEADER */
-
-.song-header {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
-}
 
 .cover img {
   width: 500px;
   height: 500px;
   border-radius: 10px;
 }
+.song-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-right: 100px;
+}
+
 
 .song-info {
+  
   h2 {
     font-size: 34px;
     margin-bottom: 15px;
@@ -71,7 +73,7 @@ body {
 
       &.play {
         background: variables.$bg;
-        color: black;
+        color: variables.$black;
         font-size: 18px;
       }
     }
@@ -79,7 +81,7 @@ body {
 
   .genres {
     span {
-      border: 1px solid #444;
+      border: 1px solid variables.$border;
       padding: 6px 14px;
       border-radius: 20px;
       margin-right: 5px;
@@ -149,220 +151,3 @@ body {
   margin-bottom: 10px;
 }
 
-/* PLAYER */
-
-.player {
-  grid-column: 1/3;
-  background: variables.$bg;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
-
-.player-left {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-
-  img {
-    width: 50px;
-  }
-
-  span {
-    color: variables.$gray;
-    font-size: 12px;
-  }
-}
-
-.player-controls {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 5px;
-
-  button {
-    background: none;
-    border: none;
-    color: variables.$text;
-    cursor: pointer;
-
-    &.play {
-      background: variables.$green;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      color: variables.$bg;
-    }
-  }
-}
-
-.progress {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.bar {
-  width: 300px;
-  height: 4px;
-  background: variables.$border;
-  border-radius: 5px;
-  position: relative;
-}
-
-.fill {
-  width: 40%;
-  height: 100%;
-  background: variables.$green;
-  border-radius: 5px;
-}
-
-.player-right {
-  display: flex;
-  gap: 10px;
-
-  button {
-    background: none;
-    border: none;
-    color: variables.$text;
-    cursor: pointer;
-  }
-}
-
-.player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: 81px;
-  border-radius: 10px;
-
-  background: variables.$bg;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 25px;
-}
-
-/* LEFT */
-
-.player-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  .song-img {
-    img {
-      width: 55px;
-      height: 55px;
-      object-fit: cover;
-    }
-  }
-
-  .song-info {
-    .title {
-      font-size: 15px;
-    }
-
-    span {
-      display: block;
-      font-size: 15px;
-      color: variables.$gray;
-    }
-  }
-}
-
-/* CENTER */
-
-.player-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  button {
-    background: none;
-    border: none;
-    color: variables.$gray;
-    font-size: 20px;
-    cursor: pointer;
-
-    &:hover {
-      color: variables.$text;
-    }
-  }
-
-  .play {
-    width: 36px;
-    height: 36px;
-
-    border-radius: 50%;
-    background: variables.$green;
-    color: black;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* PROGRESS */
-
-.progress {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  .time {
-    font-size: 15px;
-    color: variables.$gray;
-  }
-
-  .bar {
-    width: 450px;
-    height: 4px;
-
-    background: variables.$border;
-
-    border-radius: 5px;
-
-    position: relative;
-  }
-
-  .fill {
-    width: 35%;
-    height: 100%;
-    background: variables.$text;
-    border-radius: 5px;
-  }
-}
-
-/* RIGHT */
-
-.player-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  button {
-    background: none;
-    border: none;
-    color: variables.$gray;
-    font-size: 20px;
-    cursor: pointer;
-
-    &:hover {
-      color: variables.$text;
-    }
-  }
-}
