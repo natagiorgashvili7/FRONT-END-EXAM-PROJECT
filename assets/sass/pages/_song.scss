@@ -1,17 +1,16 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial; 
+  font-family: arial;
 }
 
 body {
-  background:variables.$bg;
-  color:variables.$text;
+  background: variables.$bg;
+  color: variables.$text;
 }
 
 /* MAIN */
@@ -19,7 +18,7 @@ body {
 .main {
   padding: 40px;
   overflow: auto;
-  background:variables.$bg;
+  background: variables.$bg;
 }
 
 /* SONG HEADER */
@@ -42,12 +41,17 @@ body {
     margin-bottom: 15px;
   }
 
-  .meta {
-    color:variables.$gray;
-    margin-bottom: 20px;
+  .meta-text {
+    display: flex;
+    align-items: center;
+    color: variables.$gray;
 
-    span {
-      margin-right: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 3px;
+    }
+    p {
       font-size: 14px;
     }
   }
@@ -78,36 +82,35 @@ body {
       border: 1px solid #444;
       padding: 6px 14px;
       border-radius: 20px;
-      margin-right: 10px;
+      margin-right: 5px;
       font-size: 14px;
       color: variables.$gray;
     }
   }
 
   .artists {
-    margin-top: 20px;
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1px;
   }
 
-  .artist {
-    display: flex;
+  .artists {
     gap: 10px;
-    align-items: center;
 
     img {
-      width: 61px;
-      height: 61px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
     }
 
     p {
-      font-size: 16px;
+      font-size: 14px;
+      color: variables.$text;
     }
 
     span {
-      font-size: 16px;
+      font-size: 12px;
       color: variables.$gray;
     }
   }
@@ -189,7 +192,7 @@ body {
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      color:variables.$bg;
+      color: variables.$bg;
     }
   }
 }
@@ -203,7 +206,7 @@ body {
 .bar {
   width: 300px;
   height: 4px;
-  background:variables.$border;
+  background: variables.$border;
   border-radius: 5px;
   position: relative;
 }
@@ -329,7 +332,7 @@ body {
     width: 450px;
     height: 4px;
 
-    background:variables.$border;
+    background: variables.$border;
 
     border-radius: 5px;
 
