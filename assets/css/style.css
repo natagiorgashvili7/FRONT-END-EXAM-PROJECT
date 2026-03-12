@@ -1036,7 +1036,7 @@ body {
 }
 
 #discover {
-  background-color: rgb(17, 16, 16);
+  background-color: #202020;
 }
 
 #home {
@@ -1763,7 +1763,6 @@ body {
 /* TOPBAR */
 .topbar {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -1772,25 +1771,23 @@ body {
   height: 40px;
 }
 
-.topbar .right {
+.topbar {
   display: flex;
-  align-items: center;
-  margin-left: 10px;
+  justify-content: space-between;
   color: #a7a7a7;
   cursor: pointer;
   font-size: 14px;
+}
+
+.right {
+  display: flex;
   gap: 10px;
 }
 
 .right-text {
   display: flex;
   align-items: center;
-  margin-left: 10px;
-  gap: 1px;
-}
-
-.topbar .right p {
-  color: #e5e5e5;
+  font-size: 14px;
 }
 
 /* TABLE HEAD */
@@ -1883,17 +1880,13 @@ body {
 
 /* SONG HEADER */
 .cover img {
-  width: 500px;
-  height: 500px;
   border-radius: 10px;
 }
 
 .song-header {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   margin-bottom: 40px;
-  margin-right: 100px;
 }
 
 .song-info h2 {
@@ -1908,15 +1901,16 @@ body {
 .song-info .meta-text img {
   width: 24px;
   height: 24px;
-  margin-right: 3px;
+  margin-right: 5px;
 }
 .song-info .meta-text p {
   font-size: 14px;
+  margin-right: 10px;
 }
 .song-info .controls {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 .song-info .controls button {
   background: #202020;
@@ -1940,20 +1934,18 @@ body {
   color: #b3b3b3;
 }
 .song-info .artists {
-  margin-top: 12px;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 1px;
-}
-.song-info .artists {
-  gap: 10px;
 }
 .song-info .artists img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .song-info .artists p {
+  margin-top: 10px;
   font-size: 14px;
   color: #e5e5e5;
 }

@@ -2,12 +2,15 @@
 @use "../abstracts/variables";
 *,*::before,*::after {
   box-sizing: border-box;
+  
 }
 body {
   overflow-x: hidden;
+  
 }
 #discover {
-  background-color: variables.$active_color;
+  background-color:variables.$bg;
+  
 }
 #home {
   background-color: black;
