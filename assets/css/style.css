@@ -678,7 +678,7 @@
     overflow-x: hidden;
     margin-top: 20px;
   }
-  .main .discover, .main .ganres {
+  .main .discover_ls, .main .ganres {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2192,7 +2192,7 @@ body {
 }
 
 /* MAIN */
-.main {
+.main_sec {
   padding: 40px;
   background: #202020;
 }
@@ -2207,7 +2207,6 @@ body {
 .song-header {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   margin-bottom: 40px;
   margin-right: 100px;
 }
