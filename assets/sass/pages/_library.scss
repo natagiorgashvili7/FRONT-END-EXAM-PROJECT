@@ -1,14 +1,3 @@
-// ============================================================
-//  library.scss
-//  Only library-specific styles.
-//  Compile to: assets/css/library.css
-//  This file builds on top of style.css (already linked in HTML)
-// ============================================================
-
-// =====================
-//   VARIABLES (match style.css)
-// =====================
-
 $bg:            #0F0F0F;
 $sidebar:       #0B0B0B;
 $surface:       #1A1A1A;
@@ -18,20 +7,12 @@ $text:          #FFFFFF;
 $muted:         #B3B3B3;
 $accent:        #1DB954;
 
-// =====================
-//   LAYOUT OVERRIDE
-//   first_page needs flex-col + no overflow
-// =====================
-
 .first_page {
     display: flex;
     flex-direction: column;
     overflow: hidden;   // let library_grid scroll instead
 }
 
-// =====================
-//   LIBRARY PAGE WRAPPER
-// =====================
 
 .library_page {
     flex: 1;
@@ -41,10 +22,6 @@ $accent:        #1DB954;
     // leave room for fixed player
     padding-bottom: 100px;
 }
-
-// =====================
-//   TOOLBAR
-// =====================
 
 .library_toolbar {
     display: flex;
@@ -165,9 +142,6 @@ $accent:        #1DB954;
     }
 }
 
-// =====================
-//   GRID WRAPPER
-// =====================
 
 .library_grid {
     flex: 1;
@@ -184,10 +158,6 @@ $accent:        #1DB954;
     }
 }
 
-// =====================
-//   ROW
-// =====================
-
 .lib_row {
     display: flex;
     gap: 8px;
@@ -197,7 +167,6 @@ $accent:        #1DB954;
     &::-webkit-scrollbar       { height: 3px; }
     &::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
 
-    // wide row makes cards stretch
     &--wide {
         .lib_card {
             flex: 1;
@@ -207,9 +176,6 @@ $accent:        #1DB954;
     }
 }
 
-// =====================
-//   CARD
-// =====================
 
 .lib_card {
     flex-shrink: 0;
@@ -235,9 +201,6 @@ $accent:        #1DB954;
     }
 }
 
-// =====================
-//   THUMBNAIL
-// =====================
 
 .lib_thumb {
     width: 100%;
@@ -312,10 +275,6 @@ $accent:        #1DB954;
     }
 }
 
-// =====================
-//   BADGE (top-right dot)
-// =====================
-
 .lib_badge {
     position: absolute;
     top: 8px;
@@ -331,9 +290,6 @@ $accent:        #1DB954;
     &--green { background: $accent; }
 }
 
-// =====================
-//   CARD TEXT
-// =====================
 
 .lib_title {
     font-size: 12.5px;

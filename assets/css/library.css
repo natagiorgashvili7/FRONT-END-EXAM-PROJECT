@@ -1,10 +1,16 @@
-/* =============================================================
-   library.css  —  compiled from sass/pages/_library.scss
-   Drop this in: assets/css/library.css
-   ============================================================= */
-
-/* CRITICAL LAYOUT FIXES */
-
+.each_page {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  
+}
+.each_page a {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3%;
+  color: #898989;
+}
 .main_structure {
   height: 100vh;
   overflow: hidden;
