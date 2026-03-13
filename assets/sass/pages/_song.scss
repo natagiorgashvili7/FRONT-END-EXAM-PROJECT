@@ -15,9 +15,10 @@ body {
 
 /* MAIN */
 
-.main {
+.main_sec {
   padding: 40px;
   background: variables.$bg;
+  
 }
 
 /* SONG HEADER */
@@ -30,7 +31,6 @@ body {
 .song-header {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   margin-bottom: 40px;
   margin-right: 100px;
 }
